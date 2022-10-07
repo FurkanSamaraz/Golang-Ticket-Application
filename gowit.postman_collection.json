@@ -1,0 +1,165 @@
+{
+	"id": "27744fbb-06b7-b744-f905-eae1c1c06d78",
+	"name": "gowit",
+	"description": "",
+	"order": [
+		"9a6ba520-7144-87b6-9397-e023fba01820",
+		"abd54d0e-823c-3f57-ef4f-d2735e03831e",
+		"c6eceda6-0a9d-727a-35a3-280e6e262b55",
+		"1adadd41-182e-f517-af87-808c6cab1512"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1661857685285,
+	"owner": "18965937",
+	"public": false,
+	"requests": [
+		{
+			"id": "1adadd41-182e-f517-af87-808c6cab1512",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/ticket/1 ",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1662046904776,
+			"name": "ticket/1",
+			"description": "",
+			"collectionId": "27744fbb-06b7-b744-f905-eae1c1c06d78",
+			"responses": []
+		},
+		{
+			"id": "9a6ba520-7144-87b6-9397-e023fba01820",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "27744fbb-06b7-b744-f905-eae1c1c06d78",
+			"data": [
+				{
+					"key": "name",
+					"value": "Mert",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "users",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1661900287524,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "abd54d0e-823c-3f57-ef4f-d2735e03831e",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/ticket_options/1/purchases",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "27744fbb-06b7-b744-f905-eae1c1c06d78",
+			"data": [
+				{
+					"key": "quantity",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "user_id",
+					"value": "81baa2a9-ad88-4810-b410-27f3a781a2d6",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "ticket_options/1/purchases",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1661900299585,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c6eceda6-0a9d-727a-35a3-280e6e262b55",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/ticket_options",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "example",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "desc",
+					"value": "sample description",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "allocation",
+					"value": "100",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661993246592,
+			"name": "ticket_options",
+			"description": "",
+			"collectionId": "27744fbb-06b7-b744-f905-eae1c1c06d78",
+			"responses": []
+		}
+	]
+}

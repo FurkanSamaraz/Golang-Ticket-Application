@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  db-service:
+    image: postgres
+    restart: always
+    volumes:
+           - "/var/lib/postgresql/data"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 172754
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432
+
+  auth-service:
+    build: .
+    restart: always
+    depends_on:
+      - db-service
+    links:
+      - db-service
+    ports:
+      - 8080:8080
